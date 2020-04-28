@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerProfileActivity"
+    android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:text="Select your Service"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorBlack"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tire Change"
+                android:textSize="18sp"
+                android:id="@+id/tire_change"
+                android:layout_below="@+id/title"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="10dp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Battery Jump Start"
+                android:textSize="18sp"
+                android:id="@+id/battery_jump_start"
+                android:layout_below="@id/tire_change"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8dp"
+                android:paddingHorizontal="10dp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lock Smith Services"
+                android:textSize="18sp"
+                android:id="@+id/lock_smith_services"
+                android:layout_below="@id/battery_jump_start"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8dp"
+                android:paddingHorizontal="10dp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fuel, Oil, Coolant Delivery"
+                android:textSize="18sp"
+                android:id="@+id/fuel_delivery"
+                android:layout_below="@id/lock_smith_services"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8dp"
+                android:paddingHorizontal="10dp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Engine Related Issues"
+                android:textSize="18sp"
+                android:id="@+id/engine_issues"
+                android:layout_below="@id/fuel_delivery"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8dp"
+                android:paddingHorizontal="10dp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Towing Services"
+                android:textSize="18sp"
+                android:id="@+id/towing_services"
+                android:layout_below="@id/engine_issues"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8dp"
+                android:paddingHorizontal="10dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="130dp"
+                android:id="@+id/add_notes"
+                android:background="@drawable/plus_icon"
+                />
+        </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/request_Assistance"
+        android:text="Request Assistance"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginHorizontal="80dp"
+        android:background="@drawable/loginbutton"
+        android:textColor="@color/colorWhite" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorWhite"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
